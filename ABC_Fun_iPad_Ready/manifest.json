@@ -1,0 +1,24 @@
+{
+  "name": "ABC Fun - Mode 1",
+  "short_name": "ABC Fun",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#8fe3ff",
+  "theme_color": "#39a9f4",
+  "description": "A touch-friendly alphabet learning game for children.",
+  "icons": [
+    {
+      "src": "icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

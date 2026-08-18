@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#39a9f4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ABC Fun">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+  <title>ABC Fun - Mode 1</title>
+</head>
+<body>
+  <div class="game">
+    <header class="topbar">
+      <div class="logo" aria-label="ABC Fun">ABC <span>Fun</span></div>
+      <div class="mode">
+        <strong>⭐ Mode 1: Explore</strong>
+        <small>Press, type or speak to learn!</small>
+      </div>
+      <div class="controls">
+        <button id="soundBtn" class="round-btn sound" aria-label="Toggle pronunciation">🔊</button>
+        <button id="voiceBtn" class="round-btn mic" aria-label="Voice input">🎤</button>
+        <button id="fullscreenBtn" class="round-btn home" aria-label="Fullscreen">⛶</button>
+      </div>
+    </header>
+
+    <main>
+      <aside class="instructions">
+        <h2>How to Play?</h2>
+        <div class="help-item"><span>⌨️</span><b>Keyboard</b><small>Press any letter key</small></div>
+        <div class="help-item"><span>👆</span><b>Touch</b><small>Tap any A–Z button</small></div>
+        <div class="help-item"><span>🔤</span><b>Type</b><small>Enter a letter or word</small></div>
+        <div class="help-item"><span>🎤</span><b>Voice</b><small>Tap the mic and speak</small></div>
+      </aside>
+
+      <section class="stage" id="stage">
+        <div class="sparkles" aria-hidden="true">✦　✧　✦</div>
+        <div id="letter" class="letter">A</div>
+        <img id="object" class="object apple" src="images/apple.svg" alt="Apple">
+        <div class="lesson-text">
+          <div><span id="word">Apple</span></div>
+          <small id="sentence">A is for Apple!</small>
+        </div>
+        <button id="speakBtn" class="speak" aria-label="Speak the current lesson">
+          🔊 <span>Hear it</span>
+        </button>
+
+        <div class="input-panel">
+          <div class="input-row">
+            <input id="textInput" type="text" maxlength="30" autocomplete="off"
+                   autocapitalize="none" spellcheck="false"
+                   placeholder="Type a letter or word..." aria-label="Type a letter or word">
+            <button id="textSubmit">GO</button>
+          </div>
+          <button id="listenBtn" class="listen">🎤 <span id="listenText">Say a letter or word</span></button>
+          <div id="status" class="status">Keyboard • Touch • Text • Voice</div>
+        </div>
+        <div class="ground" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="prompt">💡 <b>Let's learn!</b><small>Tap a letter below</small></div>
+      <div class="keyboard" id="keyboard" aria-label="Alphabet keyboard"></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
