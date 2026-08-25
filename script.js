@@ -21,11 +21,11 @@ const items = {
   S:{word:"Sun",image:"images/sun.png",animation:"spin"},
   T:{word:"Tiger",image:"images/tiger.png",animation:"cat"},
   U:{word:"Umbrella",image:"images/umbrella.png",animation:"butterfly"},
-  V:{word:"Van",image:"images/van.jpg",animation:"ball"},
-  W:{word:"Whale",image:"images/whale.jpg",animation:"ball"},
+  V:{word:"Van",image:"images/van.png",animation:"ball"},
+  W:{word:"Whale",image:"images/whale.png",animation:"ball"},
   X:{word:"Xylophone",image:"images/xylophone.png",animation:"spin"},
-  Y:{word:"Yacht",image:"images/yacht.jpg",animation:"ball"},
-  Z:{word:"Zebra",image:"images/zebra.jpg",animation:"cat"}
+  Y:{word:"Yacht",image:"images/yacht.png",animation:"ball"},
+  Z:{word:"Zebra",image:"images/zebra.png",animation:"cat"}
 };
 
 let soundOn = true;
